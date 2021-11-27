@@ -42,6 +42,7 @@ class AuthorController extends Controller
         ]);
 
         $author = new Author;
+        //DB            CREATE
         $author->name = $request->name;
         $author->save();
         return redirect()->route('author.index');
